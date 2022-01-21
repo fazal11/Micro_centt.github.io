@@ -80,7 +80,7 @@
   margin-top: 165px;
 }
 .user-chat-bubble {
-	margin-top: 4px;
+	margin-top: 25px;
 	padding: 16px 24px;
 	-webkit-align-self: flex-end;
 	-ms-flex-item-align: end;
@@ -178,11 +178,10 @@
 	background-position: 0 0;
 	background-size: cover
 }
-.cleo-chat-bg-text {
-	/* margin-top: 0; */
+.micro-chat-bg-text {
   margin-top: 30px;
 	font-family: 'GT Flexa Compressed', sans-serif;
-	color: rgba(0, 0, 0, 0.658);
+	color: hsla(0, 0%, 0%, 0.308);
   font-size: 120px;
 	line-height: .9;
 	font-weight: 400;
@@ -227,14 +226,17 @@ main {
 .gif__img {
 	margin-top: 20px !important;
 	width: 70%;
-	margin-left: 0px;
+	margin-left: 5px;
+	border-radius: 6px;
 }
 .clip_back {
 	h3 {
 		margin-bottom: 30px;
 	}
 }
-
+.spacing__set {
+	margin-top: 65%;
+}
 @media screen and (max-width:1650px) { 
 	.moody {
 		right: -170%;

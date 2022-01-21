@@ -1,0 +1,153 @@
+.slider {
+  margin: 30px 50px;
+}
+
+.slick-slide {
+  color: white;
+  padding: 40px 0;
+  font-size: 30px;
+  text-align: center;
+  // height: 80vh !important;
+}
+.slide__img {
+  width: 500px;
+}
+.slide__content{
+  width: 450px;
+}
+.slick-prev::before,
+.slick-next::before {
+  color: black;
+}
+
+.slick-dots {
+  bottom: 50% !important;
+  display: flex !important;
+  justify-content: center;
+  flex-direction: column !important;
+  grid-gap: 20px;
+  left: 40%;
+  left: 52%;
+  top: 55%;
+  width: 25px !important;
+}
+.slick-dots li {
+  width: 10px !important;
+  button {
+    &::before {
+    color: transparent !important;
+    font-size: 10px !important;  
+    height: 30px;
+    width: auto !important;
+    border-radius: 8px;
+    opacity: 1 !important;
+    background: #A1A1A1;
+    transition: 0.6s all;
+    }
+  }
+}
+.slick-dots li.slick-active button::before {
+  opacity: .75;
+  height: 35px;
+  background-color: #14a5f1;
+  background-image: linear-gradient(180deg, #14a5f1 24%, #19e5cf 72%);
+  border-radius: 30px;
+  width: 100%;
+  transition: 0.6s all;
+}
+
+.slick-vertical .slick-slide {
+  border: none !important;
+}
+.slider__three > * {
+  outline: none;
+  border: none;
+  &:focus-visible {
+    outline: none;
+    border: none;
+  }
+}
+// FIXES ALL SCREENS 
+@include media(991px){
+  .slide__content {
+    h1 {
+      font-size: 35px;
+    }
+    p {
+      font-size: 22px;
+      line-height: 1;
+    }
+  }
+  .slide__spacing {
+    margin-left: 25px !important;
+  }
+}
+@include media(767px){
+  .slide__img {
+    width: 370px;
+  }
+  .slick-dots {
+    transition: 0.6s all;
+    left: 45%;
+    top: 61%;
+  }
+  .slide__content {
+    h1 {
+      font-size: 28px;
+
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+}
+@include media(550px){
+  .slide__content {
+    h1 {
+      font-size: 20px;
+      margin-bottom: 10px !important;
+
+    }
+    p {
+      font-size: 17px;
+    }
+  }
+  .slick-dots li button::before {
+    width: 7px !important;
+  }
+  .slick-dots {
+    top: 57%;
+  }
+}
+@include media(500px){
+  .slick-dots {
+    top: 56%;
+  }
+  .tick_img {
+    width: 25px;
+  }
+}
+@include media(430px){
+  .slick-dots {
+    top: 58%;
+  }
+  .slide__content {
+    p {
+      font-size: 15px;
+    }
+  }
+  .slide__spacing {
+    margin-left: 20px !important;
+  }
+}
+@include media(360px){
+  .slide__content {
+    p {
+      font-size: 15px;
+      margin-bottom: 10px !important;
+    }
+  }
+  .slick-dots {
+    top: 54%;
+  }
+}

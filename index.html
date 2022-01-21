@@ -1,5 +1,5 @@
 <!doctype html>
-<html data-wf-domain=".com" data-wf-page="60f7e02bfe69a257a442dc9a" data-wf-site="60b118690f8e028ab7d93790" lang="en">
+<html data-wf-domain="none" data-wf-page="60f7e02bfe69a257a442dc9a" data-wf-site="60b118690f8e028ab7d93790" lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -12,26 +12,21 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- CSS  -->
     <link rel="stylesheet" href="css/main.css">
-    
-
-    <!-- === jquery link js cdn master common === -->
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script>
-      $(function() {
-        $('#phone').load("phone.html");
-      });
-    </script> -->
+      <!-- slides__slick  -->
+      <link rel='stylesheet' href='https://unpkg.com/slick-carousel@1.7.1/slick/slick.css'>
+      <link rel='stylesheet' href='https://unpkg.com/slick-carousel@1.7.1/slick/slick-theme.css'>
+    <title>MicroCent</title>
   </head>
   <body>
     
-    <div class="effect">
+    <div class="effect d-block">
       <!-- ### HEADER ### -->
-      <header class="bg__primary w-100 position-sticky top-0" data-aos="fade-down">
-        <div class="container-fluid px-0 ">
-          <nav class="navbar navbar-expand-lg navbar-dark py-md-4">
+      <header class="bg__primary w-100 position-sticky top-0 d-block" data-aos="fade-down">
+        <div class="container-fluid px-0 d-block">
+          <nav class="navbar navbar-expand-lg navbar-dark py-md-3">
             <div class="container-fluid px-0">
               <a class="navbar-brand fw-bold" href="index.html">
-                <img class="img-fluid" src="img/Microcent Logo White.webp" alt="logo">
+                <img class="img-fluid" src="img/logo.webp" alt="logo">
               </a>
               <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="toggler-icon top-bar"></span>
@@ -40,19 +35,19 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item mx-lg-3 font_w__300 bounce-in-top">
+                  <li class="nav-item mx-lg-3 font_w__300 slide-in-elliptic-top-fwd">
                     <a class="nav-link font_s_1 text-capitalize color_effect" href="index.html">Home</a>
                   </li>
-                  <li class="nav-item mx-lg-3 font_w__300 bounce-in-top">
+                  <li class="nav-item mx-lg-3 font_w__300 slide-in-elliptic-top-fwd">
                     <a class="nav-link font_s_1 text-capitalize color_effect" href="feature.html">features</a>
                   </li>
-                  <li class="nav-item mx-lg-3 font_w__300 bounce-in-top">
+                  <li class="nav-item mx-lg-3 font_w__300 slide-in-elliptic-top-fwd">
                     <a class="nav-link font_s_1 text-capitalize color_effect" href="#">security</a>
                   </li>
-                  <li class="nav-item mx-lg-3 font_w__300 bounce-in-top">
+                  <li class="nav-item mx-lg-3 font_w__300 slide-in-elliptic-top-fwd">
                     <a class="nav-link font_s_1 text-capitalize color_effect" href="#">contact us</a>
                   </li>
-                  <li class="nav-item mx-lg-3 font_w__300 bounce-in-top">
+                  <li class="nav-item mx-lg-3 font_w__300 slide-in-elliptic-top-fwd">
                     <a class="nav-link font_s_1 text-capitalize color_effect" href="#">FAQs</a>
                   </li>
                 </ul>
@@ -65,16 +60,28 @@
 
       <!-- ### BANNER ### -->
       <div class="banner d-flex">
-        <div class="container-fluid px-0 layout_mean">
-          <div class="row">
-            <div class="col-md-9">
-              <h1 class="text-white font__2 ff__Bebas line__86 mobo__view"data-aos="fade-down-right" >
+        <div class="container-fluid px-0 layout_mean banner__fix d-block">
+          <div class="d-flex mobo__phone">
+            <div class=" px-0">
+              <h1 class="text-white mt-0 font__3 fw-normal ff__Bebas line__86 mobo__view"data-aos="fade-down-right" >
                 1st AI personal pocket financial
                 advisor in Asia. Navigate the real
                 and meta fin-verse with us.
               </h1>
             </div>
+
+            <div class=" ">
+              <div class="mc__phone mc__phone_fix">
+                <img class="img-fluid mc__phone_mean" src="img/phone__.png" alt="">
+                <img class="img-fluid mc__phone__01" src="img/phone___screen_.png" data-aos="fade-up" data-aos-duration="1100" alt="">
+                <img class="img-fluid mc__phone__brand" src="img/MC2.png" data-aos="fade-up" data-aos-duration="1100" alt="">
+                <img class="img-fluid mc__phone__average" src="img/phone__statics.png" data-aos="fade-up" data-aos-duration="1100"  alt="">
+              </div>
+            </div>
+
           </div>
+          
+         
         </div>
       </div>
     </div>
@@ -105,9 +112,16 @@
     <!-- ### VIDEO END ### -->
 
     <!-- ADD PHONE  -->
-    <section class="phone">
+    <section class="phone" data-aos="zoom-out" data-aos-anchor-placement="top-bottom">
       <div data-w-id="60550721-6252-bc61-ab17-91f212688579" class="chat-section">
-        <div class="chat-section-intro" data-aos="fade-left" data-aos-offset="850" data-aos-duration="1200">
+        <div class="chat-section-intro d-block" data-aos="fade-left" data-aos-offset="10" data-aos-duration="1000">
+          <p class="intro-summary-text text-end text-uppercase">
+            mEET eMCY,
+            YOUR INTERACTIVE
+            VIRTUAL ASSISTANT
+          </p>
+        </div>
+        <div class="chat-section-intro d-none d-sm-block" data-aos="fade-left" data-aos-offset="1200" data-aos-duration="1000">
           <p class="intro-summary-text text-end">
             Check out EMCY in different modes to keep you in track of your Finances
           </p>
@@ -115,80 +129,80 @@
         <div class="chat modo">
           <div class="chat-bubbles">
             <div class="first__img" style="margin: 16px auto 0px auto;width: 70%;">
-              <img class="__img" style="width: 100%;" src="img/microcent__girl.png" alt="">
+              <img class="__img" style="width: 100%;" src="img/microcent__girl.webp" alt="">
             </div>
-            <div class="cleo-chat-bubble moody_first_text ">
-              <p class="chat-text">What can I do for you?</p>
+            <div class="cleo-chat-bubble moody_first_text d-block">
+              <p class="chat-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="10" data-aos-offset="300">What can I do for you?</p>
             </div>
             <div class="chat-bubbles">
-              <div class="user-chat-bubble first clint">
-                <p class="chat-text">Roast Me, Emcy.</p>
+              <div class="user-chat-bubble first clint d-block">
+                <p class="chat-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="10" data-aos-offset="300">Roast Me, Emcy.</p>
               </div>
             </div>
-            <div class="cleo-chat-bubble second user user__big">
-              <p class="chat-text">$3000 on apparel. Are you
+            <div class="cleo-chat-bubble second user user__big d-block">
+              <p class="chat-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="10" data-aos-offset="300">$3000 on apparel. Are you
                 running your own Paris
                 Fashion Week?
                 <br/>
               </p>
             </div>
-                <img class="__img gif__img" src="img/unnamed.gif" alt="">
+                <img class="__img gif__img" src="img/unnamed.gif" alt="" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="10" data-aos-offset="350">
              <div class="chat-mode moody  roast-mode">
-              <h1 class="chat-mode-heading text__roast">ROAST MODE</h1> 
+              <h1 class="chat-mode-heading text__roast red__shadow">ROAST MODE</h1> 
             </div>
           </div>
 
           
-          <div class="chat-bubbles" style="margin-top: 65%;">
-            <div class="cleo-chat-bubble  user">
-              <p class="chat-text">What can I do for you?</p>
+          <div class="chat-bubbles spacing__set">
+            <div class="cleo-chat-bubble  user d-block">
+              <p class="chat-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="10" data-aos-offset="300">What can I do for you?</p>
             </div>
-            <div class="user-chat-bubble red clint">
-              <p class="chat-text">Hype  me up!</p>
+            <div class="user-chat-bubble red clint d-block">
+              <p class="chat-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="10" data-aos-offset="300">Hype  me up!</p>
             </div>
           </div>
           <div class="chat-bubbles">
-            <div class="cleo-chat-bubble user user__big">
-              <p class="chat-text">Just $250 spent on your
+            <div class="cleo-chat-bubble user user__big d-block">
+              <p class="chat-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="10" data-aos-offset="300">Just $250 spent on your
                 recent grocery trip. Look at
                 you adulting hard! </p>
             </div>
-            <div class="cleo-chat-bubble second user user__big">
-              <p class="chat-text">
+            <div class="cleo-chat-bubble second user user__big d-block">
+              <p class="chat-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="10" data-aos-offset="300">
                 If I wasn’t your financial
                 advisor I would suggest
                 you treat yourself.
               </p>
             </div>
-              <img class="__img gif__img" src="img/unnamed.gif" alt="">
+              <img class="__img gif__img" src="img/unnamed.gif" alt="" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="10" data-aos-offset="300">
     
               <div class="chat-mode moody hype-mode" >
-                <h1 class="chat-mode-heading text__hype">HYPE MODE</h1> 
+                <h1 class="chat-mode-heading text__hype hype__shadow">HYPE MODE</h1> 
               </div>
           </div>
     
           <!-- ADD ONE MORE  -->
     
-          <div class="chat-bubbles" style="margin-top: 65%;">
-            <div class="cleo-chat-bubble user second">
-              <p class="chat-text">What can I do for you?</p>
+          <div class="chat-bubbles spacing__set">
+            <div class="cleo-chat-bubble user second d-block">
+              <p class="chat-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="10" data-aos-offset="300">What can I do for you?</p>
             </div>
-            <div class="user-chat-bubble first clint">
-              <p class="chat-text">How are my savings?</p>
+            <div class="user-chat-bubble first clint d-block">
+              <p class="chat-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="10" data-aos-offset="300">How are my savings?</p>
             </div>
           </div>
           <div class="chat-bubbles">
-            <div class="cleo-chat-bubble user second user__big">
-              <p class="chat-text">You’ve saved $230 for food
+            <div class="cleo-chat-bubble user second user__big d-block">
+              <p class="chat-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="10" data-aos-offset="300">You’ve saved $230 for food
                 this month! Want to  set
                 aside $50 for a rainy day?</p>
             </div>
-            <div class="user-chat-bubble first clint">
-              <p class="chat-text">Nah I'm good.</p>
+            <div class="user-chat-bubble first clint d-block">
+              <p class="chat-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="10" data-aos-offset="300">Nah I'm good.</p>
             </div>
     
              <div class="chat-mode moody" >
-              <h1 class="chat-mode-heading text__advisor text-end">Advisor MODE</h1> 
+              <h1 class="chat-mode-heading text__advisor text-end pass__shadow_text" data-aos="zoom-in">Advisor MODE</h1> 
             </div>
     
     
@@ -198,11 +212,11 @@
           <div class="mode-background-video roast"></div>
           <div class="mode-background-video hype"></div>
           <div class="mode-background-video roast"></div>
-          <div class="cleo-chat-bg-text">
+          <div class="micro-chat-bg-text">
             EMCY
           </div>
         </div>
-        <img src="img/phone_body.png" loading="lazy" sizes="(max-width: 991px) 100vw, 470px"  alt="" class="__img phone-frame "  /> 
+        <img src="img/phone_body.webp" loading="lazy" sizes="(max-width: 991px) 100vw, 470px"  alt="" class="__img phone-frame "  /> 
         <div class="menu__phone">
           <!-- <img src="img/Menu__phone.png"   alt="" class="img-fluid" />  -->
         </div>
@@ -211,7 +225,7 @@
     <!-- ADD PHONE END SCROLL  -->
 
     <!-- ### NFT CLIP ### -->
-    <section class="py-5 px-0">
+    <section class="py-sm-5 py-0 px-0 d-block">
       <div data-w-id="2ca810c0-1c72-4dca-d8ed-0de3388672b8" class="track">
         <div class="camera">
           <div class="frame">
@@ -236,9 +250,9 @@
                         <div class="container-fluid px-0 overflow-hidden">
                           <div class="row justify-content-between align-items-center tracks__layout">
                             <div class="col-lg-5">
-                              <div class=" py-lg-5 px-lg-5 text-lg-start text-center">
+                              <div class="text-lg-start text-center">
                                 <h3 class="font__1 text__blue">Buy Your First NFT</h3>
-                                <p class="font__5 font_w__600 text-white line__defaults pe-lg-5">
+                                <p class="font__5 font_w__600 text-white line__defaults">
                                   Invest in digital assets 
                                   verified by our in house
                                   experts to ensure a safe
@@ -265,9 +279,9 @@
                         <div class="container-fluid px-0 overflow-hidden">
                           <div class="row justify-content-between align-items-center tracks__layout">
                             <div class="col-lg-5">
-                              <div class=" py-lg-5 px-lg-5 text-lg-start text-center">
+                              <div class="text-lg-start text-center">
                                 <h3 class="font__1 light__blue_text">Earn Physical Assets</h3>
-                                <p class="font__5 font_w__600 text-white line__defaults pe-lg-5">
+                                <p class="font__5 font_w__600 text-white line__defaults">
                                   Ever dreamt of investing in
                                   quality art or fine wine? 
                                   With our tokenization 
@@ -296,9 +310,9 @@
                       <div class="container-fluid px-0 overflow-hidden">
                         <div class="row justify-content-between align-items-center tracks__layout">
                           <div class="col-lg-5">
-                            <div class=" py-lg-5 px-lg-5 text-lg-start text-center">
+                            <div class="text-lg-start text-center">
                               <h3 class="font__1 text__blue">Earn Physical Assets</h3>
-                              <p class="font__5 font_w__600 text-white line__defaults pe-lg-5">
+                              <p class="font__5 font_w__600 text-white line__defaults">
                                 Ever dreamt of investing in
                                 quality art or fine wine? 
                                 With our tokenization 
@@ -331,7 +345,7 @@
           <div class="col-md-8 mx-auto">
             <div class="pass_banner">
               <div class="pass_text text-center light__blue_text">
-                <h2 class="font__3 pass__shadow_text text-uppercase font_w__700">Battle Pass</h2>
+                <h2 class="font__3 battle__shadow text-uppercase font_w__700 ">Battle Pass</h2>
                 <!-- TIMER SETUP SKIP -->
                   <div id="timer" class="d-flex justify-content-center align-items-start w-50 mx-auto">
                     <div class="days text-uppercase">
@@ -362,9 +376,110 @@
     </section>
     <!-- ### BATTLE PASS END ### -->
 
+    <!-- PHONE SCROLL ANIMATION  -->
+    <section class="phone__ my-5 py-5 d-flex justify-content-between layout_mean">
+      <div class="phone__layout">
+        <div class="phone__img  my-5">
+          <img class="img-fluid phone___mean" src="img/phone__card.png" alt="" data-aos="zoom-in"  data-aos-offset="380" data-aos-duration="1150">
+          <div class="phone__card__01" data-aos="fade-left" data-aos-offset="500" data-aos-duration="1000">
+            <img class="img-fluid" src="img/phone_float__03.webp" alt="">
+          </div>
+          <div class="phone__card__02" data-aos="fade-left"  data-aos-offset="620" data-aos-duration="1000" data-aos-delay="100">
+            <img class="img-fluid" src="img/phone_float__02.webp" alt="">
+          </div>
+          <div class="phone__card__03" data-aos="fade-left"  data-aos-offset="800" data-aos-duration="1000" data-aos-delay="100">
+            <img class="img-fluid" src="img/phone_float__01.webp" alt="">
+          </div>
+
+        </div>
+      </div>
+      <div class="phone__content text-white">
+        <div class="phone__content__01" data-aos="fade-left" data-aos-offset="400" data-aos-duration="1000">
+          <h3 class="font__3 my-3">expand your financial</h3>
+        </div>
+
+        <div class="phone__content__02" data-aos="fade-left" data-aos-offset="370" data-aos-duration="1000">
+          <h3 class="font__3 my-3">assets from the</h3>
+        </div>
+
+        <div class="phone__content__03" data-aos="fade-left" data-aos-offset="350" data-aos-duration="1000" data-aos-delay="100">
+          <h3 class="font__3 my-3">traditional to the</h3>
+        </div>
+
+        <div class="phone__content__04" data-aos="fade-left" data-aos-offset="350" data-aos-duration="1000" data-aos-delay="100">
+          <h3 class="font__3 my-3"><span class="light__sky light__shadow">meta verse </span>and more</h3>
+        </div>
+
+      </div>
+    </section>
+    <!-- PHONE SCROLL ANIMATION end -->
+
+    <!-- slides__slick -->
+    <!-- <section class="slider__three layout_mean">
+      <div class="slider text-white mx-0" id="slider">
+        <div class="d-flex justify-content-center align-items-center text-start">
+          <div class="slide__img">
+            <img class="img-fluid"  src="img/slide___01.png" alt="img">
+          </div>
+          <div class="slide__content">
+            <h1 class="mb-4 ff__Bebas font__4 ">
+              Manage your finances
+              and earn mc squares
+            </h1>
+            <div class="ms-5 slide__spacing">
+              <p class="mb-4 font_s_1">
+                Be wise and receive MC  Square tokens for making good financial decisions.
+              </p>
+              <p class="font_s_1">
+                Be wise and receive MC  Square tokens for making good financial decisions.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center text-start">
+          <div class="slide__img">
+            <img class="img-fluid"  src="img/slide___02.png" alt="img">
+          </div>
+          <div class="slide__content">
+            <h1 class="mb-4 ff__Bebas font__4">
+              Manage your finances
+              and earn mc squares
+            </h1>
+            <div class="ms-5 slide__spacing">
+              <p class="mb-4 font_s_1">
+                Be wise and receive MC  Square tokens for making good financial decisions.
+              </p>
+              <p class="font_s_1">
+                Be wise and receive MC  Square tokens for making good financial decisions.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center text-start">
+          <div class="slide__img">
+            <img class="img-fluid"  src="img/slide___03.png" alt="img">
+          </div>
+          <div class="slide__content">
+            <h1 class="mb-4 ff__Bebas font__4">
+              Manage your finances
+              and earn mc squares
+            </h1>
+            <div class="ms-5 slide__spacing">
+              <p class="mb-4 font_s_1">
+                Be wise and receive MC  Square tokens for making good financial decisions.
+              </p>
+              <p class="font_s_1">
+                Be wise and receive MC  Square tokens for making good financial decisions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
     <!-- ### TICK TICK ### -->
     <section class="container-fluid px-0 layout_mean">
-      <div class="row py-5 my-5">
+      <div class="row py-5 my-md-5">
         <div class="col-md-6">
           <div class="about__tick" data-aos="zoom-in">
             <h2 class="text-white font__3 line___default">
@@ -376,17 +491,17 @@
             </h2>
           </div>
         </div>
-        <div class="col-md-4 offset-1">
-          <div class="tick_layout d-flex align-items-center py-5 px-4 mb-md-5" data-aos="flip-down" data-aos-duration="700" data-aos-easing="ease-in-sine">
-            <span class="me-4"><img class="tick_img" src="img/Checkmark.png" alt="TICK"></span>
+        <div class="col-md-4 offset-md-1">
+          <div class="tick_layout d-flex align-items-center py-md-5 py-4 px-4 mb-md-5 my-5" data-aos="flip-down" data-aos-duration="700" data-aos-easing="ease-in-sine">
+            <span class="me-4"><img class="tick_img" src="img/Checkmark.webp" alt="TICK"></span>
             <h3 class="font_s_1 text-white font_w__400">
               Get the latest macro-
               economic trends verified by
               our in-house financial experts
             </h3>
           </div>
-          <div class="tick_layout d-flex align-items-center py-5 px-4" data-aos="flip-up" data-aos-duration="900" data-aos-easing="ease-in-sine">
-            <span class="me-4"><img class="tick_img" src="img/Checkmark.png" alt="TICK"></span>
+          <div class="tick_layout d-flex align-items-center py-md-5 py-4 px-4" data-aos="flip-up" data-aos-duration="900" data-aos-easing="ease-in-sine">
+            <span class="me-4"><img class="tick_img" src="img/Checkmark.webp" alt="TICK"></span>
             <h3 class="font_s_1 text-white font_w__400">
               Get the latest macro-
               economic trends verified by
@@ -399,15 +514,15 @@
     <!-- ### TICK TICK ### -->
 
     <!-- ### FOOTER ### -->
-    <footer class="bg__footer py-5">
+    <footer class="bg__footer pt-5">
       <div class="container-fluid px-0 layout_mean py-3">
         <div class="row justify-content-between">
           <div class="col-md-2">
             <div class="footer__logo" data-aos="zoom-in-right">
-              <img class="img-fluid" src="img/logo.png" alt="logo">
+              <a href="index.html"><img class="img-fluid" src="img/logo.webp" alt="logo"></a>
             </div>
           </div>
-          <div class="col-md-3" data-aos="fade-down-left">
+          <div class="col-md-3 mb-3" data-aos="fade-down-left">
             <ul class="m-0 p-0 list-unstyled">
               <li class="mb-2" data-aos="flip-left">
                 <a class="text-uppercase text-decoration-none text__hype font_w__600 default__font_size" href="#">home</a>
@@ -426,17 +541,18 @@
                 Subscribe to our Newsletter
               </h3>
               <form class="my-4 w-100 position-relative" data-aos="flip-right">
-                <input class="w-100 py-1 px-3 text-white" type="email" placeholder="Enter your email here">
+                <input class="w-100 py-1 px-3 text-white" inputmode="numeric" type="email" placeholder="Enter your email here">
                 <span class="text-white position-absolute"><i class="fas fa-arrow-right"></i></span>
               </form>
             </div>
           </div>
         </div>
-        <div class="row my-4 copy__righted_by" data-aos="zoom-out-right">
+        <div class="row my-4 copy__righted_by d-block" data-aos="zoom-out-right">
           <span><a href="#">© 2021 MicroCent Ltd.</a></span>
         </div>
       </div>
     </footer>
+
     <!-- ### FOOTER END ### -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -445,6 +561,12 @@
       });
     </script>
     <!-- video__  -->
+    <!-- slick partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://unpkg.com/slick-carousel@1.7.1'></script>
+    <script src="js/slider.js"></script>
+    <!-- slick partial -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
       // get video element id
@@ -474,7 +596,7 @@
     <!-- links js  -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-    <script src="js/slides.js"></script>
+    <script src="js/scroll_smoth.js"></script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 

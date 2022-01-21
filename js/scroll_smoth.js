@@ -1,7 +1,4 @@
 (function() {
-  //
-  // thanks for https://stackoverflow.com/questions/26700853/smooth-scrolling-on-mouse-wheel
-  //
   function SmoothScroll(element, opts) {
     this.$el = $(element);
     this.opts = opts;
@@ -10,7 +7,7 @@
 
   SmoothScroll.setting = {
     step: 1000,
-    speed: 450
+    speed: 450,
   };
 
   SmoothScroll.prototype = {
