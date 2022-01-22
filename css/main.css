@@ -598,8 +598,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 420px;
-  max-width: 92vw;
+  width: 320px;
   margin-top: 24px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -679,7 +678,7 @@ header {
 .moody {
   position: absolute;
   top: 100%;
-  right: -225%;
+  right: -335%;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content; }
@@ -698,10 +697,10 @@ header {
 .phone-frame-background {
   position: -webkit-sticky;
   position: sticky;
-  bottom: 72px;
+  bottom: 200px;
   overflow: hidden;
   width: 450px;
-  height: 880px;
+  height: 700px;
   margin-right: auto;
   margin-bottom: -930px;
   margin-left: auto;
@@ -739,14 +738,14 @@ header {
 .phone-frame {
   position: -webkit-sticky;
   position: sticky;
-  bottom: 64px;
+  bottom: 200px;
   z-index: 20;
-  width: 480px;
-  height: 900px;
+  width: 380px;
+  height: 700px;
   /* 187  */
   border-radius: 80px;
-  -webkit-box-shadow: 0 80px 0 0 #202039, 0 -80px 0 0 #202039;
-          box-shadow: 0 80px 0 0 #202039, 0 -80px 0 0 #202039; }
+  -webkit-box-shadow: 0 250px 0 0 #202039, 0 -200px 0 0 #202039;
+          box-shadow: 0 250px 0 0 #202039, 0 -200px 0 0 #202039; }
 
 main {
   display: block; }
@@ -787,7 +786,7 @@ main {
 
 @media screen and (max-width: 1650px) {
   .moody {
-    right: -170%;
+    right: -235%;
     -webkit-transition: 0.6s all;
     transition: 0.6s all; }
   .intro-summary-text {
@@ -801,15 +800,15 @@ main {
     -webkit-transition: 0.6s all;
     transition: 0.6s all; }
   .moody {
-    right: -120%;
+    right: -200%;
     -webkit-transition: 0.6s all;
     transition: 0.6s all; }
   .intro-summary-text {
-    font-size: 42px; }
-  .phone-frame-background {
-    width: 94%; }
-  .chat-bubbles {
-    width: 94%; } }
+    font-size: 42px; } }
+
+@media (max-width: 1150px) {
+  .moody {
+    right: -170%; } }
 
 @media screen and (max-width: 991px) {
   .chat-section {
